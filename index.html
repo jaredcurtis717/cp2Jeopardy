@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'/>
+    <link rel="stylesheet" href="styles.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>Jeopardy</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="title">
+          <div class="titleInHeader">
+            <h1>Jeopordy!</h1>
+          </div>
+          <div class="subscriptInHeader">
+              <p>If one of the questions doesn't display correctly or is missing information, press the "pass" button</p>
+          </div>
+
+        </div>
+        <div class="points">
+          <h3>Total Points: </h3>
+          <h3 id="pointValue">0</h3>
+        </div>
+      </div>
+      <div class="question">
+        <div class="questionDivPts">
+          <h1 id = "questionPointValue">Welcome to Jeopordy!</h1>
+        </div>
+        <div class="questionDivCat">
+          <h1 id = "category">Here is where you will see the questions and point values</h1>
+        </div>
+        <div class="questionDivVal">
+          <p id = "questionValue">After answering the question to yourself, click the "Show Answer" button.  If you got the answer correct, click the "Correct" button; Otherwise press the "Wrong" button.  If you would prefer not to answer, you may pass this question and go onto the next one by pressing the "Pass" button.  Points will be added or deducted whether you guessed correctly or incorrectly.  Press "pass" to begin.</p>
+        </div>
+        <div class="answer">
+          <p id = "questionAnswer"></p>
+        </div>
+      </div>
+      <div class="choices">
+        <div class="pass">
+          <button id = "passButton">Pass</button>
+        </div>
+        <div class="correct">
+          <button id = "correctButton">Correct</button>
+        </div>
+        <div class="wrong">
+          <button id = "wrongButton">Wrong</button>
+        </div>
+        <div class="showAnswer">
+          <button id = "showAnswerButton">Show Answer</button>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="">Github</a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+
+  </body>
+</html>
